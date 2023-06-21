@@ -1,0 +1,84 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/user/mine",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/user/perfect",
+			"style": {
+				"navigationBarTitleText": "编辑资料"
+			}
+		},
+		{
+			"path": "pages/user/friend",
+			"style": {
+				"navigationBarTitleText": "我的好友"
+			}
+		},
+		{
+			"path": "pages/user/order",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/user/wallet",
+			"style": {
+				"navigationBarTitleText": "钱包"
+			}
+		},
+		{
+			"path": "pages/user/walletList",
+			"style": {
+				"navigationBarTitleText": "收支明细"
+			}
+		},
+		{
+			"path": "pages/user/withdrawalList",
+			"style": {
+				"navigationBarTitleText": "提现列表"
+			}
+		},
+		{
+			"path": "pages/chatgpt/room",
+			"style": {
+				"navigationBarTitleText": "Ai问答",
+				"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path": "pages/chatgpt/channel",
+			"style": {
+				"navigationBarTitleText": "公开频道"
+			}
+		},
+		{
+			"path": "pages/login",
+			"style": {
+				"navigationBarTitleText": "login"
+			}
+		},
+		{
+			"path": "pages/notice",
+			"style": {
+				"navigationBarTitleText": "notice"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "AI大脑",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		// #ifdef H5
+		"navigationStyle": "custom",
+		// #endif
+		// #ifndef H5
+		"navigationStyle": "default",
+		// #endif
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

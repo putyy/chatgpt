@@ -1,0 +1,10 @@
+/.idea/
+/.vscode/
+/.hbuilderx/
+/uni_modules/*
+!/uni_modules/bt-cropper_3.0.1/
+!/uni_modules/mp-html/
+/node_modules/
+/unpackage/
+/common/config.ts
+/.vite/

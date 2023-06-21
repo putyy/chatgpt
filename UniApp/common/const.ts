@@ -1,0 +1,11 @@
+export const xTokenCacheKey = "app-x-token"; // 缓存登录token
+export const AppNoticeCacheKey = "app-notice"; // 缓存提示信息
+export const AppInitCacheKey = "app-init"; // 缓存公共信息
+export const AppInitOptionCacheKey = "app-init-options"; // 缓存初始化参数
+export const UserMineCacheKey = "app-user-mine"; // 个人中心缓存
+export const AiRolesCacheKey = "app-ai-room-roles"; // ai问答角色缓存
+export const AiBaseCacheKey = "app-ai-room-base"; // ai问答基础信息缓存
+export const AiQuickIssueCacheKey = "app-ai-room-quick-issue"; // ai问答快捷问题列表缓存
+export const AiLoginCacheKey = "app-ai-login"; // 缓存登录名密码
+export const AiModelCacheKey = "app-ai-model"; // 模型设置缓存
+export const AiModelListCacheKey = "app-ai-model-list"; // 模型设置缓存

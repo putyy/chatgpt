@@ -1,0 +1,9 @@
+{
+    "name": "Ai",
+    "label": "ai",
+    "description": "ai",
+    "installed": true,
+    "enabled": true,
+    "version": "1.0.0",
+    "order": 0
+}
