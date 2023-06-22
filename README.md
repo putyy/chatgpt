@@ -1,15 +1,25 @@
 # uniapp、hyperf MineAdmin 实现的 chatgpt应用，支持小程序、H5、App！
 ## 效果图
-![](img.png)
+#### App
+![](images/1.jpg)
+
+![](images/2.jpg)
+
+![](images/3.jpg)
+
+#### 后台系统
 .
-![](img_1.png)
-.
+![admin.png](images/admin.png)
+
+## 线上体验
+#### 邀请码填: 1，这个邀请码就是上级用户ID而已，1为顶级！
+#### H5 [http://ai.putyy.com](http://ai.putyy.com)
+
 ## 开始安装
 > 下载本项目
 ```shell
 git clone https://github.com/putyy/chatgpt.git
 ```
-.
 
 ## 安装 MineAdmin
 #### 1. 按照官方文档进行安装 [安装文档](https://doc.mineadmin.com/guide/install/)
@@ -234,3 +244,6 @@ let config = [
     }
 ]
 ```
+## 免责声明
+#### 使用本软件不得用于开发违反国家有关政策的相关软件和应用，若因使用本软件造成的一切法律责任均与本人无关！
+
