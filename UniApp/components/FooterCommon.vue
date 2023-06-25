@@ -1,30 +1,17 @@
-<!--底部导航-->
 <template lang="pug">
 div.footer
-  div.item(
-    :class="{active: footerIndex === 0}"
-    @click="operationFooter(0)"
+  div.item(v-for="(item, key) in footer"
+    :class="{active: footerIndex === key}"
+    @click="operationFooter(key)"
   )
     span.icon
-      uni-icons( type="chatbubble" size="35" :color="footerIndex === 0 ? '#55aaef' : '#ccc'")
-    span.text Ai问答
-  div.item(
-    :class="{active: footerIndex === 1}"
-    @click="operationFooter(1)"
-  )
-    span.icon
-      uni-icons( type="medal" size="35" :color="footerIndex === 1 ? '#55aaef' : '#ccc'")
-    span.text 公开频道
-  div.item(
-    :class="{active: footerIndex === 2}"
-    @click="operationFooter(2)"
-  )
-    span.icon
-      uni-icons( type="home" size="35" :color="footerIndex === 2 ? '#55aaef' : '#ccc'")
-    span.text 我的
+      uni-icons( :type="item.icon" size="35" :color="footerIndex === key ? '#55aaef' : '#ccc'")
+    span.text {{item.name}}
 </template>
 
 <script setup>
+// @ts-ignore
+import {ref} from "vue"
 import {byRedirectTo} from "../common/utils/jump"
 
 const props = defineProps({
@@ -32,18 +19,24 @@ const props = defineProps({
     type: Number,
     required: false,
     default: 0
-  }, // 选择的角标
-  fromUid: {
-    type: Number,
-    required: false,
-    default: 0
-  } // 分享人的uid
+  }
 })
 
-/**
- * 底部按钮跳转
- * @param index {Number} 选择的角标
- */
+const footer = ref([
+  {
+    icon: 'chatbubble',
+    name: "Ai问答"
+  },
+  {
+    icon: 'medal',
+    name: "公开频道"
+  },
+  {
+    icon: 'home',
+    name: "我的"
+  },
+])
+
 const operationFooter = (index) => {
   if (props.footerIndex === index) {
     return

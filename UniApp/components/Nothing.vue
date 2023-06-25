@@ -19,12 +19,11 @@ const props = defineProps({
 const emit = defineEmits(['entry'])
 </script>
 
-<!--没有数据-->
 <style lang="scss">
 .nothing {
   text-align: center;
   padding-top: 400rpx;
-  background-image: '../../static/images/nothing.png';
+  background-image: url('../../static/images/nothing.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 267rpx;
