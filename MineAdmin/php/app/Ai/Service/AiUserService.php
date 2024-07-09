@@ -120,7 +120,7 @@ class AiUserService extends AbstractService
         return $res;
     }
 
-    public function update(int $id, array $data): bool
+    public function update(mixed $id, array $data): bool
     {
         /**
          * @var AiUser $user

@@ -12,10 +12,7 @@
 <script setup>
 import { ref, reactive } from 'vue'
 import aiPayKami from '@/api/ai/aiPayKami'
-import { Message } from '@arco-design/web-vue'
-import tool from '@/utils/tool'
-import * as common from '@/utils/common'
-import Add from './components/Add.vue'
+import Add from './components/add.vue'
 
 const crudRef = ref()
 const addRef = ref()

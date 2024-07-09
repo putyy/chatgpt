@@ -11,10 +11,6 @@
 .
 ![admin.png](images/admin.png)
 
-## 线上体验
-##### 注册时账号密码随便填, 邀请码填: 1，这个邀请码就是上级用户ID而已，1为顶级！
-#### H5 [http://ai.putyy.com](http://ai.putyy.com)
-
 ## 技术栈 具体依赖看项目代码吧！
 ### 前端
 > uniapp vue3 pug scss 等
@@ -36,9 +32,11 @@ git clone https://github.com/putyy/chatgpt.git
 ## 安装 MineAdmin
 #### 1. 按照官方文档进行安装 [安装文档](https://doc.mineadmin.com/guide/install/)
 
-#### 2. 安装好后，打开后台: 工具->模块管理->新增，模块名称: Ai 其他随意， 添加完成后需要启用
+#### 2. 安装本项目mineadmin-php
 
-#### 3. 安装本项目mineadmin-php
+> 安装composer依赖包
+>> composer require easyswoole/oss putyy/php-constants orhanerday/open-ai --ignore-platform-reqs
+
 >复制本项目 ./MineAdmin/php/app/ai 下所有子文件夹，粘贴到到mineadmin-php app/ai目录下
 >> cp -r ./MineAdmin/php/app/ai/ ./you-mineadmin-php/app/ai
 
@@ -83,9 +81,7 @@ git clone https://github.com/putyy/chatgpt.git
 > })
 > ```
 > 
-> 安装composer依赖包
->> composer require easyswoole/oss putyy/php-constants orhanerday/open-ai --ignore-platform-reqs
-
+> 
 > 修改mineadmin后端 file 配置文件，位置: config/autoload/file.php,新增如下内容:
 > ```php
 > return [
@@ -234,9 +230,19 @@ location ^~ /upload/ {
     proxy_pass http://127.0.0.1:9501/;
 }
 ```
-#### MineAdmin-vue下的.env.development文件如下
+#### MineAdmin-vue下的
+> .env.development
 ```env
 VITE_APP_BASE_URL = http://you.domain.com/api
+
+VITE_APP_UPLOAD_URL = http://you.domain.com/upload
+
+VITE_APP_WS_URL = ws://you.domain.com/ws/message.io
+```
+
+> .env.production
+```env
+VITE_APP_BASE_URL = /
 
 VITE_APP_UPLOAD_URL = http://you.domain.com/upload
 

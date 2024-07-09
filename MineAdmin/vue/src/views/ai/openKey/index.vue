@@ -14,7 +14,7 @@
 import { ref, reactive } from 'vue'
 import aiOpenaiKey from '@/api/ai/aiOpenaiKey'
 import { Message } from '@arco-design/web-vue'
-import Add from './components/Add.vue'
+import Add from './components/add.vue'
 
 const crudRef = ref()
 
